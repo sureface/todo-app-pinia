@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <Modal />
+
+    <div class="wrapper">
+      <bg-video />
+
+      <Table />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import BgVideo from "@/components/bgVideo";
+import Table from "@/components/table";
+import Modal from "@/components/modal";
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {BgVideo, Table, Modal},
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
